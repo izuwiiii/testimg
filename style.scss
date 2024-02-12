@@ -1,0 +1,528 @@
+
+
+.all {
+
+    background-color: black;
+    width: 100%;
+    // height: 100vh;
+    color: white;
+    z-index: 1;
+    padding-bottom: 150px;
+
+    // 1 Section Main
+
+    .contact {
+        padding-top: 30px;
+        // z-index: 1;
+
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+
+            h1 {
+                font-size: 70px;
+            }
+            
+            .color {
+                color: #f50f60;
+            }
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding-right: 150px;
+            gap: 50px;
+            // padding-top: 20px;
+            // z-index: 1;
+
+            .descr {
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                z-index: 1;
+                p {
+                    font-size: clamp(.875rem ,.7525510204rem + .612244898vw ,1.25rem);
+                    width: 400px;
+                    line-height: 2;
+                }
+            }
+
+
+            .me {
+                // width: 800px;
+                // height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+
+                span {
+                    z-index: 1;
+                    position: absolute;
+                    width: 1000px;
+                    height: 1000px;
+                    background: radial-gradient(#f50f60,rgba(0, 0, 0, 0),#00000000);
+                
+                }
+
+                img {
+                    z-index: 1;
+                }
+            }
+
+            .phone {
+                height: 600px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                flex-direction: column;
+                z-index: 1;
+
+
+
+                button {
+                    font-size: clamp(.875rem ,.7525510204rem + .612244898vw ,1.25rem);
+                    padding: 25px;
+                    border-radius: 50px;
+                    background-color: #f50f60;
+                    border: 0;
+                    color: white;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    // font-weight: 100;
+                    // font-size: 20px;
+
+                    &:hover {
+                        background-color: rgb(235, 13, 39);
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 10px;
+                    gap: 10px;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+
+                    li {
+                        
+
+                        img {
+                            max-width: 45px;
+                            cursor: pointer;
+                            transition: 0.2s ease;
+                        }
+
+                    }
+
+                    li {
+
+                        img:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    // 2 Section Portfolio
+
+    .portfolio {
+        padding-top: 150px;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+            h1 {
+                font-weight: 700;
+                font-size: clamp(1.875rem ,1.262755102rem + 3.0612244898vw ,3.75rem);
+                color: #f50f60;
+                margin: 0 auto; 
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            .card {
+                transform: scale(1.02);
+                cursor: pointer;
+                transition: 0.5s ease;
+                
+                img {
+                    border-radius: 20px;
+                    width: 500px;
+                }
+
+                &:hover {
+                    transform: scale(1.03);
+                    .portfolio__item-description {
+                        opacity: 1; 
+                    }
+
+                }
+
+                .portfolio__item-description {
+                    opacity: 0; 
+                    transition: opacity 0.5s ease;
+                    background-color: #00000086;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    span {
+                        font-size: clamp(1.5625rem ,1.4604591837rem + .5102040816vw ,1.875rem);
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        transition: 0.3s ease;
+                        font-size: 1.25rem;
+                        
+                        &:hover {
+                            color: #f50f60;
+                        }
+                    }
+
+
+
+
+                }
+
+
+                
+            }
+
+            
+        }
+    }
+
+    // 3 Section Skills
+
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+        flex-direction: column;
+        gap: 30px;
+
+        .title {
+            
+            h1 {
+                font-size: clamp(1.875rem ,1.262755102rem + 3.0612244898vw ,3.75rem);
+                color: #f50f60;
+            }
+        }
+
+        .cards { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 70vw;
+            flex-wrap: wrap;
+
+            .card {
+
+                background-color: #171717;
+                width: 290px;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                font-size: 1.25rem;
+                cursor: pointer;
+                transition: 0.2s ease;
+                gap: 10px;
+
+                img { 
+                    width: 60px;
+                }
+            }
+
+            .card:hover {
+                background-color: #242424;
+            }
+        }
+    }
+
+    // 4 Section Projects
+
+    .projects {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .mac {
+            width: 654px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                position: absolute;
+            }
+
+            swiper-container {
+                width: 600px;
+                height: 350px;
+
+
+
+                swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 510px;
+                        height: 330px;
+                        border-radius: 4px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .hire-me {
+            width: 50%;
+            padding-left: 150px;
+            
+            .title {
+                
+                span {
+                    color: #f50f60;
+                }
+
+                h1 {
+                    font-size:clamp(1.875rem ,1.4668367347rem + 2.0408163265vw ,3.125rem);
+                    padding: 10px;
+                    width: 60%;
+                    text-align: center;
+                }
+
+            }
+
+            .descr {
+
+                width: 700px;
+
+                p {
+                    font-size: clamp(.875rem ,.7525510204rem + .612244898vw ,1.25rem);
+                    line-height: 1.5384615385;
+                    text-indent: 30px;
+                    text-align: justify;
+                }
+
+            }
+        }
+    }
+}
+
+// Responsive
+
+
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .all {
+
+
+
+        .contact {
+            .name {
+                h1 {
+                    font-size: 40px;
+                }
+        
+            }
+
+            .main {
+                flex-direction: column;
+                padding: 0;
+
+                .descr {
+                    height: 200px;
+                }
+
+                .phone {
+                    height: auto;
+                }
+            }
+        }
+
+        .portfolio {
+
+            .cards {
+                flex-direction: column;
+            }
+        }
+
+        .projects {
+            flex-direction: column-reverse;
+    
+            .mac {
+                padding-top: 50px;
+            }
+
+            .hire-me {
+                padding: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .descr {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    p {
+                        width: 600px;
+                    }
+                }
+            }
+        }
+        
+        .skills {
+            .cards {
+                flex-direction: row;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) { 
+    body {
+        overflow-x: hidden;
+    }
+
+    .all {
+
+
+
+        .contact {
+            .name {
+                h1 {
+                    font-size: 40px;
+                }
+        
+            }
+
+            .main {
+                flex-direction: column;
+                padding: 0;
+
+                .descr {
+                    height: 200px;
+                }
+
+                .phone {
+                    height: auto;
+                }
+            }
+        }
+
+        .portfolio {
+
+            .cards {
+                flex-direction: column;
+            }
+        }
+
+        .projects {
+            flex-direction: column-reverse;
+    
+            .mac {
+                padding-top: 50px;
+            }
+
+            .hire-me {
+                padding: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .descr {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    p {
+                        width: 600px;
+                    }
+                }
+            }
+        }
+        
+        .skills {
+            .cards {
+                flex-direction: row;
+                width: 800px;
+            }
+        }
+    }
+}
